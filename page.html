@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gawgitta's Pokemon Randomizer</title>
+        <meta name="description" content="Gawgitta's Pokemon Randomizer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body {
+                background-color: #6e7681;
+            }
+
+            .button {
+              border: none;
+              color: white;
+              padding: 16px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              font-family: Helvetica, Arial, sans-serif;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+            }
+            
+            .button1 {
+              background-color: #484f58;
+              color: rgb(255, 255, 255);
+              border: 2px solid #3fb950;
+            }
+            
+            .button1:hover {
+              background-color: #3fb950;
+              color: white;
+            }
+
+            .heading {
+                font-family: Helvetica, Arial, sans-serif;
+                text-align: center;
+            }
+
+            .container {
+                height: 200px;
+                position: relative;
+            }
+
+            .buttoncontainer {
+                bottom: 0px;
+            }
+
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .vertical-center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            .dex {
+                text-align: center;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            .dexContainer {
+                text-align: center;
+                -ms-text-justify: distribute-all-lines;
+                text-justify: distribute-all-lines;
+            }
+
+            .dexImg {
+                height: 240px;
+                width: 240px;
+                position: relative;
+                border: 4px solid #050404;
+                border-radius: 5%;
+                background-color: #050404;
+            }
+
+            .dexi1 {
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .dexi2 {
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .dexi3 {
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .dexi4 {
+                vertical-align: top;
+                display: inline-block;
+            }
+            
+            .dexi5 {
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .dexi6 {
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .stretch {
+                width: 100%;
+                display: inline-block;
+                font-size: 0;
+                line-height: 0;
+            }
+
+            .dex1, .dex2, .dex3, .dex4, .dex5, .dex6 {
+                position: relative;
+                top: 50%;
+                left: 50%;
+            }
+            </style>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <h1 class="heading">Gawgitta's Pokemon Randomizer</h1>
+        <div class="container dexContainer">
+            <div class="dexImg dexi1"><img id="dex1" src=" "></div>
+            <div class="dexImg dexi2"><img id="dex2" src=" "></div>
+            <div class="dexImg dexi3"><img id="dex3" src=" "></div>
+            <div class="dexImg dexi4"><img id="dex4" src=" "></div>
+            <div class="dexImg dexi5"><img id="dex5" src=" "></div>
+            <div class="dexImg dexi6"><img id="dex6" src=" "></div>
+        </div>
+        <div class="container buttoncontainer">
+            <div class="center">
+                <button class="button button1" type="button" onclick="gibPokemon()">GIVE ME POKEMON!!!</button>
+                <label for="party">Party Size:</label>
+                <select name="party" id="party">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>
