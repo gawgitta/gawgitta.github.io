@@ -5,7 +5,6 @@ function randomDex() {
 function gibPokemon() {
     partySelector = document.querySelector('#party');
     partySize = partySelector.value;
-    console.log(randomDex())
 
     document.getElementById("dex1").src = "shiny/" + randomDex() + ".png";
 
